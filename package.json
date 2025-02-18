@@ -1,7 +1,6 @@
 {
   "name": "quoteapp",
   "version": "1.0.0",
-  
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -24,7 +23,8 @@
     "react-native-reanimated": "^3.16.7",
     "react-native-safe-area-context": "^5.2.0",
     "react-native-screens": "^4.6.0",
-    "react-native-web": "^0.19.13"
+    "react-native-web": "^0.19.13",
+    "@expo/metro-runtime": "~4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
