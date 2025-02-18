@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SplashScreen from './components/SplashScreen';
+import Dashboard from './components/Dashboard';
 
 const Stack = createStackNavigator();
 
@@ -11,7 +12,16 @@ export default function App() {
     <View style={styles.container}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="SplashScreen" component={SplashScreen} />
+          <Stack.Screen
+            name="SplashScreen"
+            component={SplashScreen}
+            
+          />
+          <Stack.Screen
+            name="Dashboard"
+            component={Dashboard}
+            
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </View>
