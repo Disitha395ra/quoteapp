@@ -9,13 +9,12 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
             name="SplashScreen"
             component={SplashScreen}
-            //options={{ headerShown: false }}
+            options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Dashboard"
@@ -24,7 +23,6 @@ export default function App() {
           />
         </Stack.Navigator>
       </NavigationContainer>
-    </View>
   );
 }
 
